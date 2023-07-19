@@ -18,9 +18,57 @@ html, body {
 
 body {
     font-size: 1.6rem;
-    background-color: #003333;
+    background: linear-gradient(to right, #181D2C 0%, 9.956710040569305%, #181D2C 19.91342008113861%, 29.004329442977905%, #161A28 38.0952388048172%, 69.0476194024086%, #0E111A 100%);
     font-family: 'Raspoutine DemiBold', sans-serif;
     min-width: 300px;
+}
+
+.svg1, .svg2, .svg3, .svg4, .svg5 {
+    position: absolute;
+    z-index: -999;
+}
+.svg1 {
+    left: 55%;
+    top: 30%;
+}
+
+.svg2 {
+    left: 4%;
+    top: 32%;
+}
+
+.svg3 {
+    left: 50%;
+    top: 5%;
+}
+
+.svg4 {
+    top: 40%;
+    left: 40%;
+}
+
+.svg5 {
+    bottom: 94%;
+    left: 80%;
+}
+
+.svg3, .svg2 {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    }
+
+@keyframes pulse {
+    0% {
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    transform: scale3d(1, 1, 1);
+    }
 }
 
 header {
@@ -33,7 +81,29 @@ header img{
 }
 
 ul {
+    background-color: #181D2C;
+    position: absolute;
+    z-index: 999;
+    color: white;
+    width: 100%;
+    padding: 2%;
+    height: 45%;
+}
+.active { 
     display: none;
+    transition: 2s ease;
+}
+
+.menu-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    margin-top: 1%;
+    padding: 4%;
+    text-align: center;
+    font-weight: 700;
 }
 
 ul li:hover {
@@ -58,7 +128,7 @@ ul li:hover {
 }
 
 strong {
-    color: #6666ff;
+    color: #2C4082;
 }
 
 .apre-texto p {
@@ -75,7 +145,7 @@ strong {
     margin-right: 6%;
     border-radius: 30% 20% 30% 20%;
     padding: 1%;
-    box-shadow: (#003333) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
 }
 
 .img-repo {
@@ -86,7 +156,6 @@ strong {
 
 .img-repo img {
     width: 24%;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .sobre {
@@ -101,7 +170,7 @@ strong {
     text-align: center;
     margin-top: 3%;
     font-weight: 800;
-    color: #012c2c;
+    color: #181E2A;
     text-shadow: -2px 2px 2px rgba(15, 1, 1, 0.59);
 }
 
@@ -138,7 +207,7 @@ main h1 {
     text-align: center;
     font-weight: 800;
     margin-top: 4%;
-    color: #012c2c;
+    color: #181E2A;
     text-shadow: -2px 2px 2px rgba(15, 1, 1, 0.59);
 }
 
@@ -178,4 +247,3 @@ footer div {
     gap: 7%;
     padding-bottom: 2%;
 }
-
