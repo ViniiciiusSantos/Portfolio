@@ -66,7 +66,6 @@ strong {
     align-self: center;
     font-size: 1.5rem;
     margin-left: 4%;
-    width: 90%;
     font-weight: 700;
     color: white;
 }
@@ -95,12 +94,15 @@ strong {
     margin-top: 8%;
     padding-top: 2%;
     padding-bottom: 8%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .sobre h1 {
     text-align: center;
     margin-top: 3%;
     font-weight: 800;
+    color: #012c2c;
+    text-shadow: -2px 2px 2px rgba(15, 1, 1, 0.59);
 }
 
 .sobre p {
@@ -108,7 +110,7 @@ strong {
     margin-top: 3%;
     margin-left: 3%;
     font-weight: 550;
-    font-size: 2.0rem;
+    font-size: 1.9rem;
 }
 
 aside {
@@ -129,17 +131,20 @@ main {
     padding-bottom: 4%;
     display: flex;
     flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 main h1 {
     text-align: center;
     font-weight: 800;
     margin-top: 4%;
+    color: #012c2c;
+    text-shadow: -2px 2px 2px rgba(15, 1, 1, 0.59);
 }
 
 main p {
     font-weight: 550;
-    font-size: 2.0rem;
+    font-size: 1.9rem;
     text-align: center;
     margin-top: 5%;
     margin-left: 2%;
@@ -158,6 +163,7 @@ footer {
 }
 
 footer p {
+    font-size: 1.3rem;
     text-align: center;
     font-weight: 800;
 }
