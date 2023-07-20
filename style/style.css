@@ -6,7 +6,7 @@
     list-style: none;
 }
 
-@import url('https://fonts.cdnfonts.com/css/raspoutine');
+@import url('https://fonts.cdnfonts.com/css/mocnetla');
 
 html {
     font-size: 62.5%;
@@ -19,27 +19,29 @@ html, body {
 body {
     font-size: 1.6rem;
     background: linear-gradient(to right, #181D2C 0%, 9.956710040569305%, #181D2C 19.91342008113861%, 29.004329442977905%, #161A28 38.0952388048172%, 69.0476194024086%, #0E111A 100%);
-    font-family: 'Raspoutine DemiBold', sans-serif;
-    min-width: 300px;
+    font-family: 'Mocnetla', sans-serif;
+    min-width: 230px;
+    line-height: 2.0rem;
 }
 
 .svg1, .svg2, .svg3, .svg4, .svg5 {
     position: absolute;
     z-index: -999;
 }
+
 .svg1 {
     left: 55%;
     top: 30%;
 }
 
 .svg2 {
-    left: 4%;
-    top: 32%;
+    right: 50%;
+    top: 30%;
 }
 
 .svg3 {
-    left: 50%;
-    top: 5%;
+    left: 45%;
+    top: 3%;
 }
 
 .svg4 {
@@ -49,7 +51,7 @@ body {
 
 .svg5 {
     bottom: 94%;
-    left: 80%;
+    left: 60%;
 }
 
 .svg3, .svg2 {
@@ -76,8 +78,15 @@ header {
     justify-content: space-between;
 }
 
+.logo {
+    width: 11%;
+    height: 9%;
+    margin-right: 2%;
+}
+
 header img{
     width: 10%;
+    margin-top: 1%;
 }
 
 ul {
@@ -87,11 +96,17 @@ ul {
     color: white;
     width: 100%;
     padding: 2%;
-    height: 45%;
+    height: 0%;
+    transition: 0.9s;
+    visibility: hidden;
+    overflow-y: hidden;
+    border-radius: 0% 0% 2% 2%;
 }
+
 .active { 
-    display: none;
-    transition: 2s ease;
+    height: 48%;
+    visibility: visible;
+    transition: 0.9s;
 }
 
 .menu-img {
@@ -101,9 +116,13 @@ ul {
 
 ul li {
     margin-top: 1%;
-    padding: 4%;
+    padding: 2%;
+    margin-top: 5%;
     text-align: center;
+    width: 50%;
+    margin-left: 26%;
     font-weight: 700;
+    border-bottom: solid 1px white;
 }
 
 ul li:hover {
@@ -140,22 +159,21 @@ strong {
     color: white;
 }
 
-.apresentacao img {
+.perfil-img {
     width: 33%;
-    margin-right: 6%;
     border-radius: 30% 20% 30% 20%;
-    padding: 1%;
-    
+    margin-right: 4%;
 }
 
 .img-repo {
     display: flex;
     justify-content: center;
-    gap: 4%;
+    margin-top: 6%;
+    gap: 17%;
 }
 
-.img-repo img {
-    width: 24%;
+.img-repo a i {
+    font-size: 4.7rem;
 }
 
 .sobre {
@@ -171,15 +189,15 @@ strong {
     margin-top: 3%;
     font-weight: 800;
     color: #181E2A;
-    text-shadow: -2px 2px 2px rgba(15, 1, 1, 0.59);
+    text-shadow: -2px 2px 2px rgba(39, 75, 142, 0.33);
 }
 
 .sobre p {
     text-align: center;
-    margin-top: 3%;
+    margin-top: 5%;
     margin-left: 3%;
     font-weight: 550;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
 }
 
 aside {
@@ -208,14 +226,14 @@ main h1 {
     font-weight: 800;
     margin-top: 4%;
     color: #181E2A;
-    text-shadow: -2px 2px 2px rgba(15, 1, 1, 0.59);
+    text-shadow: -2px 2px 2px rgba(39, 75, 142, 0.33);
 }
 
 main p {
     font-weight: 550;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 6%;
     margin-left: 2%;
 }
 
@@ -234,16 +252,155 @@ footer {
 footer p {
     font-size: 1.3rem;
     text-align: center;
+    padding-bottom: 2%;
     font-weight: 800;
+    color: rgb(219, 219, 219);
 }
 
-footer i {
-    font-size: 2.6rem;
-    margin-top: 2%;
+footer a i {
+    font-size: 2.8rem;
 }
+
 footer div {
     display: flex;
     justify-content: center;
     gap: 7%;
     padding-bottom: 2%;
 }
+
+
+.ani-text {
+	animation: text-flicker-in-glow 5s linear both;
+}
+
+@keyframes text-flicker-in-glow {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    10.1% {
+      opacity: 1;
+      text-shadow: none;
+    }
+    10.2% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    20% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    20.1% {
+      opacity: 1;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+    }
+    20.6% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    30% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    30.1% {
+      opacity: 1;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.45), 0 0 40px rgba(255, 255, 255, 0.25);
+    }
+    30.5% {
+      opacity: 1;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.45), 0 0 40px rgba(255, 255, 255, 0.25);
+    }
+    30.6% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    45% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    45.1% {
+      opacity: 1;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.45), 0 0 40px rgba(255, 255, 255, 0.25);
+    }
+    50% {
+      opacity: 1;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.45), 0 0 40px rgba(255, 255, 255, 0.25);
+    }
+    55% {
+      opacity: 1;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.45), 0 0 40px rgba(255, 255, 255, 0.25);
+    }
+    55.1% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    57% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    57.1% {
+      opacity: 1;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.55), 0 0 40px rgba(255, 255, 255, 0.35);
+    }
+    60% {
+      opacity: 1;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.55), 0 0 40px rgba(255, 255, 255, 0.35);
+    }
+    60.1% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    65% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    65.1% {
+      opacity: 1;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.55), 0 0 40px rgba(255, 255, 255, 0.35), 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+    75% {
+      opacity: 1;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.55), 0 0 40px rgba(255, 255, 255, 0.35), 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+    75.1% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    77% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    77.1% {
+      opacity: 1;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25), 0 0 50px rgba(255, 255, 255, 0.1);
+    }
+    85% {
+      opacity: 1;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.45), 0 0 70px rgba(255, 255, 255, 0.25), 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+    85.1% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    86% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    86.1% {
+      opacity: 1;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.45), 0 0 70px rgba(255, 255, 255, 0.25), 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+    95% {
+      opacity: 1;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 50px rgba(255, 255, 255, 0.45), 0 0 70px rgba(255, 255, 255, 0.25), 0 0 80px rgba(255, 255, 255, 0.1);
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+  }
+  

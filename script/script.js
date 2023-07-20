@@ -7,7 +7,7 @@ function abrirMenu() {
 }
 
 function fecharMenu() {
-    ul.classList.add('active')
+    ul.classList.remove('active')
 }
 
 fechar.addEventListener('click', fecharMenu);
