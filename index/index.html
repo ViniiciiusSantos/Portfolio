@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="/style/style.css">
     <title>PauloVinicius</title>
     <link rel="stylesheet" href="https://icons8.com/icon/37246/gmail-logo">
+    <link rel="stylesheet" href="/mediaquery/mediaDesktop.css">
     <script src="https://kit.fontawesome.com/6d1b8c799d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header id="home">
         <img src="/img/7612954.png" alt="icone-menu" class="icone-menu">
         <img src="/img/pvweb-high-resolution-logo-color-on-transparent-background.png" alt="Logo" class="logo">
         <ul>
@@ -18,22 +19,17 @@
                 <i class="fa-solid fa-xmark fechar-menu" style="color: #ffffff;"></i>
                 <img src="/img/pvweb-high-resolution-logo-color-on-transparent-background.png" alt="" class="logo">
             </div>
-            <li>Home</li>
-            <li>Sobre</li>
-            <li>Projetos</li>
-            <li>Contato</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#footer">Contato</a></li>
         </ul>
     </header>
     <section class="apresentacao">
-    <img src="/svg/lines.svg" alt="" class="svg1">
-    <img src="/svg/Untitled (1).svg" alt="" class="svg2">
-    <img src="/svg/Untitled (2).svg" alt="" class="svg3">
-    <img src="/svg/Untitled (3)svg" alt="" class="svg4">
-    <img src="/svg/Untitled.svg" alt="" class="svg5">
         <div class="apre-texto">
             <p>Olá, sou Paulo Vinicius <br>
-                <strong class="ani-text">DESENVOLVEDOR FRONTEND</strong>, <br>
-                Bem vindo ao meu portfolio<strong>!</strong>
+                <strong class="ani-text">DESENVOLVEDOR FRONTEND</strong> <br>
+                Bem vindo ao meu Portfólio<strong>!</strong>
             </p>
             <div class="img-repo">
                 <a href="https://github.com/ViniiciiusSantos" target="_blank"><i class="fa-brands fa-github" style="color: #0c0d0e;"></i></a>
@@ -42,12 +38,14 @@
         </div>
        <img src="/img/perfil-novo (1).jpg" alt="" class="perfil-img">
     </section>
-    <section class="sobre">
+    <section class="sobre" id="sobre">
+        <div class="sobre-div">
         <h1>Sobre mim</h1>
-        <p>
-            Olá! Sou Paulo Vinícius. Tenho conhecimentos em <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Bootstrap</strong> e <strong>ReactJs</strong>, e estou constantemente aprimorando minhas habilidades para me tornar um profissional de alto nível. Sou focado, determinado e estou pronto para enfrentar os desafios do mercado de trabalho. Busco minha primeira oportunidade profissional na área.
-        </p>
-        <img src="/img/NOVA-IMG-2.jpg" alt="" class="img-sobre-desktop">
+            <p>
+                Olá! Sou Paulo Vinícius. Tenho conhecimentos em <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Bootstrap</strong> e <strong>ReactJs</strong>, e estou constantemente aprimorando minhas habilidades para me tornar um profissional de alto nível. Sou focado, determinado e estou pronto para enfrentar os desafios do mercado de trabalho. Busco minha primeira oportunidade profissional na área.
+            </p>
+        </div>
+            <img src="/img/NOVA-IMG-2.jpg" alt="" class="img-sobre-desktop">
     </section>
     <aside>
         <i class="fa-brands fa-css3-alt" style="color: #1551b7;"></i>
@@ -56,19 +54,33 @@
         <i class="fa-brands fa-bootstrap" style="color: #490f70;"></i>
         <i class="fa-brands fa-react" style="color: #3cc8b1;"></i>
     </aside>
-    <main>
+    <main id="projetos">
         <h1>Projetos</h1>
-        <div>
-            <p>
-                Projeto de um e-commerce que foi feito utilizando Flexbox e JavaScript. Há um slider de imagens e um carrinho de compras para adicionar os itens. No carrinho, há um contador dinâmico que interage com o usuário. Além disso, há um modal com um slider de imagens.</p>
-            <a href="https://merry-douhua-54e8c3.netlify.app/" target="_blank"><img src="/img/desktop-design.jpg" alt="imagem de um projeto de e-commerce"></a>
-        </div>
-        <div>
-            <p>Projeto de uma página de Newsletter sign-up. O site foi feito utilizando o conceito de Mobile First. Há um input para inserir o email, no qual tem a confirmação se o email está correto ou não. Se estiver correto, aparecerá uma mensagem de sucesso.</p>
-            <a href="https://incredible-gelato-b498df.netlify.app/" target="_blank"><img src="/img/desktop-design2.jpg" alt=""></a>
-        </div>
+            <div class="projeto-1">
+                <div class="descri-projeto">
+                    <h2>Pagina de E-commerce</h2>
+                    <p>
+                        Projeto de um e-commerce que foi feito utilizando Flexbox e JavaScript. Há um slider de imagens e um carrinho de compras para adicionar os itens. No carrinho, há um contador dinâmico que interage com o usuário. Além disso, há um modal com um slider de imagens.</p>
+                        <div class="link-projetos">
+                            <a href="https://github.com/ViniiciiusSantos/ecommerce-product-page-main" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://merry-douhua-54e8c3.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                </div>
+                <a href="https://merry-douhua-54e8c3.netlify.app/" target="_blank"><img src="/img/desktop-design.jpg" alt="imagem de um projeto de e-commerce" class="projeto1"></a>
+            </div>
+                <div class="projeto-2">
+                <div class="descri-projeto2">
+                    <h2>Newsletter Sing-up</h2>
+                    <p>Projeto de uma página de Newsletter sign-up. O site foi feito utilizando o conceito de Mobile First. Há um input para inserir o email, no qual tem a confirmação se o email está correto ou não. Se estiver correto, aparecerá uma mensagem de sucesso.</p>
+                    <div class="link-projetos">
+                        <a href="https://github.com/ViniiciiusSantos/newsletter-sign-up-with-success-message-main" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://incredible-gelato-b498df.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                    <a href="https://incredible-gelato-b498df.netlify.app/" target="_blank"><img src="/img/desktop-design2.jpg" alt="" class="projeto2"><a>   
+            </div>
     </main>
-    <footer>
+    <footer id="footer">
         <p>Contato:</p>
         <div>
             <a href="https://wa.me/5512996498862?text=Ol%C3%A1%2C+%C3%A9+%C3%B3timo+te+ver+por+aqui%21+Sou+Paulo+Vinicius%2C+desenvolvedor+Web.+Como+posso+te+ajudar+hoje%3F" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #3e9306;"></i></a>

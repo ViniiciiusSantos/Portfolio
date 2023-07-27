@@ -1,0 +1,219 @@
+@media (min-width: 800px) {
+    header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1%;
+    }
+
+    ul {
+        visibility: visible;
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0%;
+        width: 40%;
+        height: 5%;
+        margin-right: 10%;
+        font-size: 1.4rem;
+        background: none;
+        gap: 12%;
+        overflow: hidden;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    ul li {
+        padding: 0;
+        position: relative;
+        margin: 0;
+        width: 10%;
+        height: 3vh;
+        border: #181E2A;
+        display: inline-block;
+    }
+
+    ul li {
+        cursor: pointer;
+    }
+
+    ul li a:hover {
+        color: #6666ff;
+        transition: 0.8s;
+        transition-delay: 0.1s;
+    }
+
+    .icone-menu {
+        display: none;
+    }
+    .menu-img {
+        display: none;
+    }
+
+    .logo {
+        width: 4%;
+        margin-left: 19%;
+        margin-bottom: 1%;
+    }
+
+    .perfil-img {
+        content: url('/img-desktop/perfil-novo.jpg');
+        display: block; 
+        width: 21%;
+    }
+
+    .apresentacao {
+        justify-content: center;
+        margin: 0;
+        margin-top: 6%;
+        padding: 0;
+    }
+
+    .apre-texto {
+        margin-right: 10%;
+        margin-top: 6%;
+        justify-content: flex-start;
+    }
+
+    .apre-texto p {
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .img-repo a i {
+        font-size: 6.0rem;
+    }
+
+    .img-sobre-desktop {
+        display: block;
+        width: 46%;
+    }
+
+    .sobre {
+        display: flex;
+        padding-bottom: 3%;
+    }
+    .sobre h1 {
+        font-size: 3.1rem;
+        margin-left: 5%;
+    }
+    .sobre p {
+        font-size: 2.3rem;
+        line-height: 3.2rem;
+        margin-left: 5%;
+    }
+    .sobre-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    aside {
+        height: 22%;
+        margin-top: 0;
+    }
+
+    aside i {
+        font-size: 5.6rem;
+    }
+
+    main h1 {
+        margin-top: 7%;
+        font-size: 3.6rem;
+    }
+
+    main p {
+        width: 92%;
+        align-self: center;
+        line-height: 2.5rem;
+    }
+
+    .projeto1 {
+        content: url(/img-desktop/desktop-design.jpg);
+        width: 80%;
+    }
+
+    .projeto2 {
+        content: url(/img-desktop/desktop-design1.jpg);
+        width: 80%;
+        height: 87%;
+    }
+
+    .projeto-1 {
+        display: flex;
+        margin-top: 7%;
+    }
+
+    .projeto-2 {
+        display: flex;
+        margin-bottom: 5%;
+        justify-content: space-evenly;
+        margin-top: 7%;
+    }
+
+    .descri-projeto {
+        display: flex; 
+        flex-direction: column;
+        width: 80%;
+        padding-top: 6%;
+        margin-left: 3%;
+    }
+
+    .descri-projeto h2 {
+        height: 10%;
+        text-align: center;
+        color: #181E2A;
+        font-weight: 800;
+    }
+
+    .descri-projeto2 {
+        display: flex; 
+        flex-direction: column;
+        width: 80%;
+        padding-top: 10%;
+        margin-left: 3%;
+    }
+
+    .descri-projeto2 h2 {
+        height: 10%;
+        text-align: center;
+        color: #181E2A;
+        font-weight: 800;
+    }
+
+    .link-projetos {
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        margin-top: 5%;
+    }
+
+    .link-projetos i {
+        color: black;
+        font-size: 4.1rem;
+    }
+
+    footer p {
+        font-size: 1.7rem;
+    }
+
+    footer div {
+        margin-right: 5%;
+    }
+
+    footer a i {
+        font-size: 3.7rem;
+        align-items: center;
+    }
+
+    i:hover {
+        opacity: 0.6;
+    }
+
+}
