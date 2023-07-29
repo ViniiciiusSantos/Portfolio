@@ -134,6 +134,10 @@
         line-height: 2.5rem;
     }
 
+    .descri-projeto i, .descri-projeto2 i {
+        display: inline-block;
+    }
+
     .projeto1 {
         content: url(/img-desktop/desktop-design.jpg);
         width: 80%;
